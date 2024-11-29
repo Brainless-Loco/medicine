@@ -43,9 +43,9 @@ export default function Home({ navigation }) {
               <Text style={styles.updateDate}>{update.date}</Text>
             </View>
           ))}
-          <TouchableOpacity style={styles.seeMoreBtn}>
+          {/* <TouchableOpacity style={styles.seeMoreBtn}>
               <Text style={styles.seeMoreBtnText}>See more</Text>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
         </View>
       </View>
     </View>
