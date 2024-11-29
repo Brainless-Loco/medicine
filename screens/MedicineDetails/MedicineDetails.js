@@ -55,8 +55,14 @@ export default function MedicineDetails() {
 
       {/* Details */}
       <View style={styles.detailsSection}>
-        <Text style={styles.detailLabel}>Details</Text>
-        <Text style={styles.detailValue}>{medicine.details}</Text>
+        <Text style={styles.detailLabel}>Price</Text>
+        <Text style={styles.detailValue}>8000 BDT (2.5% in 10mL)</Text>
+      </View>
+
+      {/* Manufacturer */}
+      <View style={styles.detailsSection}>
+        <Text style={styles.detailLabel}>Manufacturer</Text>
+        <Text style={styles.detailValue}>Kedrion Biopharma</Text>
       </View>
 
       {/* Origin */}
@@ -71,6 +77,16 @@ export default function MedicineDetails() {
       <View style={styles.detailsSection}>
         <Text style={styles.detailLabel}>Dosage</Text>
         <Text style={styles.detailValue}>• {medicine.dosage}</Text>
+      </View>
+
+      {/* Indications */}
+      <View style={styles.detailsSection}>
+        <Text style={styles.detailLabel}>Indications</Text>
+        {medicine.sideEffects.map((effect, index) => (
+          <Text key={index} style={styles.detailValue}>
+            • Lorem Impsum dolor sit amet, consectetur
+          </Text>
+        ))}
       </View>
 
       {/* Side Effects */}

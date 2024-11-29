@@ -31,7 +31,7 @@ export default function Medicines({ navigation }) {
       indications: 'Treatment of infections caused by multidrug-resistant gram-negative bacteria.',
     },
     {
-      id: '1',
+      id: '3',
       title: 'Uman Albumin',
       subtitle: 'Human Serum Albumin',
       details: '2.5% in 10 ml & 5% in 10 ml',
@@ -45,7 +45,7 @@ export default function Medicines({ navigation }) {
     },
     
     {
-      id: '2',
+      id: '4',
       title: 'Colistimethate',
       subtitle: 'Colistimethate Sodium',
       details: '1 million IU per vial',
