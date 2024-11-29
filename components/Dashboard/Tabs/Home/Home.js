@@ -19,13 +19,13 @@ export default function Home({ navigation }) {
           style={styles.button}
           onPress={() => navigation.navigate('Categories')}
         >
-          <Text style={styles.buttonText}>All Categories</Text>
+          <Text style={styles.buttonText}>Our All Products</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={() => navigation.navigate('LatestProducts')}
         >
-          <Text style={styles.buttonText}>Latest Products</Text>
+          <Text style={styles.buttonText}>To Make Order</Text>
         </TouchableOpacity>
       </View>
 
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
   },
   logo: {
     // width: 100,
-    height: 85,
+    height: 60,
     aspectRatio: 3.29
   },
   buttonContainer: {
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#004eb3',
     padding: 15,
     margin: 8,
-    borderRadius: 8,
+    borderRadius: 25,
     alignItems: 'center',
   },
   buttonText: {
@@ -105,6 +105,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     marginBottom: 10,
+    textAlign: "center",
   },
   updateBox: {
     backgroundColor: '#f0f8ff',

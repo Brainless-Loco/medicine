@@ -3,24 +3,29 @@ import { StyleSheet } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../../components/Dashboard/Tabs/Home/Home';
 import Activities from '../../components/Dashboard/Tabs/Activities/Activities';
-import AboutUs from '../../components/Dashboard/Tabs/AboutUs/AboutUs';
-import AntDesign from '@expo/vector-icons/AntDesign';
-import Ionicons from '@expo/vector-icons/Ionicons';
+
+import AllBusinesses from '../../components/Dashboard/Tabs/AllBusinesses/AllBusinesses';
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
+import Entypo from '@expo/vector-icons/Entypo';
+import Calculator from '../../components/Dashboard/Tabs/Calculator/Calculator';
 
 const Tab = createBottomTabNavigator();
 
 export default function Dashboard({ route, navigation }) {
 
   const focusedIcons = [
-    <Ionicons name="home-outline" size={24} color="black" />,
-    <Ionicons name="newspaper-outline" size={24} color="black" />,
-    <AntDesign name="infocirlceo" size={24} color="black" />
+    <Entypo name="home" size={24} color="#cedaed" />,
+    <FontAwesome6 name="sheet-plastic" size={24} color="#cedaed" />,
+    <MaterialIcons name="hub" size={24} color="#cedaed" />,
+    <MaterialIcons name="calculate" size={24} color="#cedaed" />
   ]
 
   const unFocusedIcons = [
-    <Ionicons name="home-sharp" size={24} color="#0044ba" />,
-    <Ionicons name="newspaper-sharp" size={24} color="#0044ba" />,
-    <AntDesign name="infocirlce" size={24} color="#0044ba" />
+    <Entypo name="home" size={24} color="#0044ba" />,
+    <FontAwesome6 name="sheet-plastic" size={24} color="#0044ba"/>,
+    <MaterialIcons name="hub" size={24} color="#0044ba" />,
+    <MaterialIcons name="calculate" size={24} color="#0044ba"/>
   ]
 
   const tabComponents = [
@@ -33,8 +38,12 @@ export default function Dashboard({ route, navigation }) {
       focusedIcon: focusedIcons[1], unFocusedIcon: unFocusedIcons[1]
     },
     {
-      name: "About Us", component: AboutUs,
+      name: "All Businesses", component: AllBusinesses,
       focusedIcon: focusedIcons[2], unFocusedIcon: unFocusedIcons[2]
+    },
+    {
+      name: "Dose Calculator", component: Calculator,
+      focusedIcon: focusedIcons[3], unFocusedIcon: unFocusedIcons[3]
     }
   ]
 
