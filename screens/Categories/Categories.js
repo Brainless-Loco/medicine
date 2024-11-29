@@ -74,7 +74,7 @@ export default function Categories({ navigation }) {
       </Modal>
 
       {/* Category List */}
-      <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
         {filteredCategories.map((category) => (
           <TouchableOpacity
             key={category}
@@ -128,7 +128,7 @@ const styles = StyleSheet.create({
   category: {
     width:'92%',
     marginHorizontal:'auto',
-    borderWidth: 3,
+    borderWidth: 1,
     borderColor: '#004eb3',
     padding: 20,
     marginVertical: 8,

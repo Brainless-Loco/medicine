@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Dashboard from './screens/Dashboard/Dashboard'
 import Categories from './screens/Categories/Categories';
 import Medicines from './screens/Medicines/Medicines';
+import MedicineDetails from './screens/MedicineDetails/MedicineDetails';
 
 
 export default function App() {
@@ -32,6 +33,17 @@ export default function App() {
               fontWeight: '600',
             },
           }}/>
+          
+        <Stack.Screen name="MedicineDetails" component={MedicineDetails} options={{
+          title: "Details",
+          headerStyle: {
+            backgroundColor: '#004eb3',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: '600',
+          },
+        }}/>
         
       </Stack.Navigator>
     </NavigationContainer>
