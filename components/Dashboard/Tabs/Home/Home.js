@@ -1,9 +1,13 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView, Button } from 'react-native';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 export default function Home({ navigation }) {
   return (
     <View style={styles.container}>
+      <TouchableOpacity style={styles.feedBackBtn}>
+        <Ionicons name="chatbubble-ellipses" size={32} color="#004eb3" />
+      </TouchableOpacity>
       {/* Logo Section */}
       <View style={styles.logoContainer}>
         <Image
@@ -134,5 +138,13 @@ const styles = StyleSheet.create({
     textAlign:'center',
     color:'#1f4b70',
     fontWeight:'500',
+  },
+  feedBackBtn:{
+    position:'absolute',
+    top:50,
+    right:15,
+    padding:10,
+    borderRadius:50,
+    backgroundColor:'#edf2f2'
   }
 });
