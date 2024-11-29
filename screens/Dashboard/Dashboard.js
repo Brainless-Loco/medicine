@@ -4,7 +4,6 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../../components/Dashboard/Tabs/Home/Home';
 import Activities from '../../components/Dashboard/Tabs/Activities/Activities';
 import AboutUs from '../../components/Dashboard/Tabs/AboutUs/AboutUs';
-import FontAwesome  from '@expo/vector-icons/FontAwesome';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
