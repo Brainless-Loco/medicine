@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../../components/Dashboard/Tabs/Home/Home';
 import Activities from '../../components/Dashboard/Tabs/Activities/Activities';
+
 import AllBusinesses from '../../components/Dashboard/Tabs/AllBusinesses/AllBusinesses';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';

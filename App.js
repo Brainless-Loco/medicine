@@ -12,8 +12,26 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Dashboard" component={Dashboard} options={{headerShown:false}} />
-        <Stack.Screen name="Categories" component={Categories} />
-        <Stack.Screen name="Medicines" component={Medicines} />
+        <Stack.Screen name="Categories" component={Categories} options={{
+            title: "Categories",
+            headerStyle: {
+              backgroundColor: '#004eb3',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: '600',
+            },
+          }}/>
+        <Stack.Screen name="Medicines" component={Medicines} options={{
+            title: "Medicines",
+            headerStyle: {
+              backgroundColor: '#004eb3',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: '600',
+            },
+          }}/>
         
       </Stack.Navigator>
     </NavigationContainer>
