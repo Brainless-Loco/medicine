@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     marginVertical: 8,
     borderRadius: 8,
     alignItems: 'center',
-    backgroundColor: 'transparent',
+    backgroundColor: '#f0f8ff',
     elevation: 0,
     shadowColor: '#000',
     shadowOpacity: 0.1,
