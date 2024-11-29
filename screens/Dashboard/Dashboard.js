@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../../components/Dashboard/Tabs/Home/Home';
 import Activities from '../../components/Dashboard/Tabs/Activities/Activities';
 import AboutUs from '../../components/Dashboard/Tabs/AboutUs/AboutUs';
-import Icon from '@react-native-vector-icons/fontawesome';
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 
 const Tab = createBottomTabNavigator();
 
