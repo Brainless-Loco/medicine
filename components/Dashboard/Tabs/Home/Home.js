@@ -34,9 +34,9 @@ export default function Home({ navigation }) {
         <Text style={styles.sectionTitle}>Latest Updates</Text>
         <View style={styles.updateBox}>
           {[
-            { text: 'Health tips on constipation', date: '20th Dec, 2024' },
-            { text: 'New product launch: Colistimethate', date: '21st Nov, 2024' },
-            { text: 'Discounts on baby care products', date: '1st Nov, 2024' },
+            { text: '❄️ Health tips on constipation', date: '20th Dec, 2024' },
+            { text: '🧬 New product launch: Colistimethate', date: '21st Nov, 2024' },
+            { text: '👶🏻 Discounts on baby care products', date: '1st Nov, 2024' },
           ].map((update, index) => (
             <View key={index} style={styles.updateItem}>
               <Text style={styles.updateText}>{update.text}</Text>
